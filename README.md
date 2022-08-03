@@ -24,7 +24,7 @@ Simple crude using mogo db
 <hr>
 <img src="https://github.com/prince-116/TODO-Crud-Using-Angular/blob/main/server/db/names.png"/>
 <hr>
-<img scr="https://raw.githubusercontent.com/prince-116/TODO-Crud-Using-Angular/main/server/db/Document%20structure.png" />
+<img scr="https://github.com/prince-116/TODO-Crud-Using-Angular/blob/main/server/db/Document%20structure.png" />
 <br><p>// If not created By it self</p>
 
 # step-4
