@@ -14,7 +14,7 @@ Simple crude using mogo db
 <p>    1) npm install </p>
 <p>    2) npm start / ng serve</p>
 
-<p>// running on port <a>http://localhost:4200/</a></p>
+<p>// running on port <a>http://localhost:4200/</a> </p>
 
 # step-3:
 
