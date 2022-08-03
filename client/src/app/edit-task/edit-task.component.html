@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>UPDATE TASK</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <form [formGroup]="addTask" novalidate class="form">
+        <input
+          class="py-3 form-control shadow"
+          type="text"
+          formControlName="task"/>
+      </form>
+    </div>
+    <div class="col-2">
+      <!-- <i onclick="addList()" class=" btn btn-dark rounded-pill fas fa-4x fa-plus-circle ">ADD</i> -->
+      <button type="submit" (click)="onSubmit()" class="mt-2 btn btn-dark">UPDATE</button>
+    </div>
+  </div>
+</div>

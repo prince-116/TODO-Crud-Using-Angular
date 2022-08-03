@@ -1,0 +1,61 @@
+<hr />
+<div class="row rounded bg-white">
+  <div class="col-12">
+    <ul class="list-group" id="list">
+      <!-- hear -->
+      <li
+        class="my-3 py-3 shadow list-group-item"
+        *ngFor="let task of tasks"
+        id="list${listNum}"
+      >
+        <div class="row">
+          <!-- task print -->
+          <div class="col-6">
+            <span class="h4">{{ task.task }}</span>
+          </div>
+
+          <div class="col-4">
+            <button class="btn btn-dark" (click)="deltask(task)">Delete</button>
+            &nbsp;&nbsp;
+
+            <a href="edit-task/{{ task._id }}"
+              ><button type="button" class="btn btn-dark">edit</button></a
+            >
+
+            <button type="button" class="btn btn-dark" (click)="openPopup()">
+                        Edit
+                  </button>
+                  
+                  <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{ display: displayStyle }" >
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           
+                            <div class="modal-header">
+                              <h4 class="modal-title">EDIT {{task.task}}</h4>
+                           </div>
+                           
+                           
+                           <div class="modal-body">
+                              <p>One Stop Solution for all CS problems</p>
+                           </div>
+
+
+                           <div class="modal-footer">
+                              <button
+                                 type="button"
+                                 class="btn btn-danger"
+                                 (click)="closePopup()"
+                                 >
+                              Close
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+          </div>
+        </div>
+      </li>
+      <!-- hear -->
+    </ul>
+  </div>
+</div>
